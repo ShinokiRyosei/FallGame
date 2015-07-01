@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>31AEF3FE-4CCA-495A-80A0-95FBDE539D14</string>
+	<key>IDESourceControlProjectName</key>
+	<string>FallGame</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>ABCFDDB3F1CAA0C04EC0F76612752E622B17337B</key>
+		<string>https://github.com/shinokin/FallGame.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>FallGame.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>ABCFDDB3F1CAA0C04EC0F76612752E622B17337B</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/shinokin/FallGame.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>ABCFDDB3F1CAA0C04EC0F76612752E622B17337B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>ABCFDDB3F1CAA0C04EC0F76612752E622B17337B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FallGame</string>
+		</dict>
+	</array>
+</dict>
+</plist>

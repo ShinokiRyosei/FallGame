@@ -14,6 +14,8 @@ class ViewController: UIViewController, UICollisionBehaviorDelegate {
     @IBOutlet var balls: [UIView]!
     @IBOutlet var walls: [UIView]!
     @IBOutlet var obstacles: [UIView]!
+    @IBOutlet var goal: UIView!
+    
     
     let motionManager = CMMotionManager()
     
@@ -57,6 +59,8 @@ class ViewController: UIViewController, UICollisionBehaviorDelegate {
             collisionBehavior.addItem(obstacle)
         }
         
+        collisionBehavior.addBoundaryWithIdentifier(self.goal.description, forPath: UIBezierPath(rect: self.goal.frame))
+        
         self.motionManager.startDeviceMotionUpdatesToQueue(NSOperationQueue.mainQueue(), withHandler: {
             (deviceMotion: CMDeviceMotion!, error: NSError!) in
             let x = CGFloat(deviceMotion.attitude.roll)
@@ -69,7 +73,30 @@ class ViewController: UIViewController, UICollisionBehaviorDelegate {
     }
 
     func collisionBehavior(behavior: UICollisionBehavior, beganContactForItem item: UIDynamicItem, withBoundaryIdentifier identifier: NSCopying, atPoint p: CGPoint){
-        NSLog("衝突しました")
+//        NSLog("衝突しました")
+        println(item.description)
+//        println(identifier)
+/*
+        if identifier == nil {
+            return
+        }
+*/
+    
+        var checka = true
+        for ball in balls {
+            if item as! UIView == ball {
+                checka = false
+                break
+            }
+        }
+        
+        if checka {
+            return
+        }
+        
+        if identifier as! String == description {
+            NSLog("ゴールしました")
+        }
     }
 
 }
